@@ -1,428 +1,1026 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulshan-e-Subhan Housing Scheme | Hyderabad, Sindh</title>
-    <meta name="description" content="Hyderabad's premier gated housing society on Bypass Road. Immediate possession available. 120, 200 & 400 Sq Yard plots with full development.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <style>
-        :root {
-            --green:#2ECC71; --green-dark:#1a8a4a; --green-deep:#0d3d22;
-            --green-mid:#134d2a; --green-light:rgba(46,204,113,0.12);
-            --green-border:rgba(46,204,113,0.25); --gold:#F1C40F;
-            --gold-dim:rgba(241,196,15,0.12); --gold-border:rgba(241,196,15,0.3);
-            --text-main:#E8F5EE; --text-dim:rgba(232,245,238,0.6);
-            --glass:rgba(255,255,255,0.04); --glass-border:rgba(255,255,255,0.09);
-        }
-        *{margin:0;padding:0;box-sizing:border-box;font-family:'Nunito',sans-serif;}
-        html{scroll-behavior:smooth;}
-        body{background:var(--green-deep);color:var(--text-main);overflow-x:hidden;line-height:1.7;}
-        .amb{position:fixed;border-radius:50%;filter:blur(150px);pointer-events:none;z-index:0;}
-        .amb-1{width:60vw;height:60vw;background:radial-gradient(circle,rgba(46,204,113,0.1),transparent);top:-20%;left:-10%;}
-        .amb-2{width:50vw;height:50vw;background:radial-gradient(circle,rgba(241,196,15,0.06),transparent);bottom:0;right:-10%;}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gulshan-e-Subhan Housing Scheme | Official Website | Hyderabad</title>
+<meta name="description" content="Official website of Gulshan-e-Subhan Housing Scheme, Hyderabad Bypass. 120, 200 & 400 Sq Yard residential plots. Immediate possession available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Source Sans 3',sans-serif;color:#1a1a1a;background:#f5f5f0;font-size:15px;}
 
-        header{position:fixed;top:0;width:100%;z-index:1000;padding:1.3rem 6%;display:flex;justify-content:space-between;align-items:center;background:rgba(13,61,34,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--green-border);transition:padding 0.3s;}
-        .logo-wrap{display:flex;align-items:center;gap:1rem;}
-        .logo-mark{width:52px;height:52px;background:linear-gradient(135deg,var(--green),var(--green-dark));border-radius:14px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:white;box-shadow:0 0 25px rgba(46,204,113,0.3);flex-shrink:0;}
-        .brand-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:white;line-height:1.2;}
-        .brand-sub{font-size:0.65rem;color:var(--green);letter-spacing:2.5px;text-transform:uppercase;font-weight:700;}
-        .header-right{display:flex;align-items:center;gap:1rem;}
-        .possession-badge{padding:7px 14px;border-radius:100px;background:rgba(46,204,113,0.15);border:1px solid var(--green-border);font-size:0.72rem;font-weight:700;color:var(--green);letter-spacing:1px;display:flex;align-items:center;gap:6px;}
-        .possession-badge span{width:7px;height:7px;background:var(--green);border-radius:50%;animation:blink 1.4s infinite;}
-        @keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
-        .nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;text-decoration:none;font-weight:700;font-size:0.85rem;border-radius:8px;transition:0.3s;box-shadow:0 6px 20px rgba(46,204,113,0.3);}
-        .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(46,204,113,0.5);}
+.gov-bar{background:#1B4D2E;padding:7px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;}
+.gov-bar p{color:rgba(255,255,255,.8);font-size:.75rem;}
+.gov-bar-right{display:flex;gap:1.2rem;}
+.gov-bar-right a{color:rgba(255,255,255,.8);font-size:.75rem;text-decoration:none;display:flex;align-items:center;gap:5px;transition:.2s;}
+.gov-bar-right a:hover{color:#fff;}
 
-        .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:130px 8% 100px;position:relative;z-index:1;background:radial-gradient(ellipse 90% 70% at 50% 0%,rgba(46,204,113,0.1) 0%,transparent 65%),linear-gradient(180deg,var(--green-deep) 0%,var(--green-mid) 100%);overflow:hidden;}
-        .leaves{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
-        .leaf{position:absolute;width:6px;height:6px;background:var(--green);border-radius:50% 0 50% 0;opacity:0.08;animation:float-leaf linear infinite;}
-        @keyframes float-leaf{0%{transform:translateY(100vh) rotate(0deg);opacity:0;}10%{opacity:0.08;}90%{opacity:0.08;}100%{transform:translateY(-10vh) rotate(720deg);opacity:0;}}
-        .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--green-border);background:var(--green-light);padding:8px 22px;border-radius:100px;font-size:0.75rem;font-weight:700;color:var(--green);letter-spacing:2px;text-transform:uppercase;margin-bottom:2rem;}
-        .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,7.5vw,6rem);font-weight:800;line-height:1.08;margin-bottom:1.5rem;color:white;}
-        .green-text{background:linear-gradient(135deg,var(--green),#5df5a0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-        .gold-text{background:linear-gradient(135deg,var(--gold),#ffe066);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-        .hero p{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--text-dim);max-width:700px;margin:0 auto 2.5rem;}
-        .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;}
-        .cta-green{padding:17px 42px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;text-decoration:none;font-weight:700;font-size:1rem;border-radius:12px;box-shadow:0 12px 35px rgba(46,204,113,0.4);transition:0.3s;display:inline-block;animation:pulse-green 2.5s infinite;}
-        .cta-green:hover{transform:translateY(-5px);}
-        .cta-gold-btn{padding:17px 42px;background:linear-gradient(135deg,var(--gold),#c9a800);color:#1a1a00;text-decoration:none;font-weight:700;font-size:1rem;border-radius:12px;transition:0.3s;display:inline-block;}
-        .cta-gold-btn:hover{transform:translateY(-5px);}
-        @keyframes pulse-green{0%{box-shadow:0 0 0 0 rgba(46,204,113,0.6);}70%{box-shadow:0 0 0 18px rgba(46,204,113,0);}100%{box-shadow:0 0 0 0 rgba(46,204,113,0);}}
+header{background:#fff;border-bottom:4px solid #1B4D2E;box-shadow:0 2px 8px rgba(0,0,0,.1);}
+.header-main{padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.logo-area{display:flex;align-items:center;gap:16px;}
+.logo-emblem{width:72px;height:72px;background:linear-gradient(135deg,#1B4D2E,#2d7a4a);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:3px solid #C9A84C;box-shadow:0 4px 15px rgba(27,77,46,.3);}
+.logo-emblem span{color:#fff;font-size:1.4rem;font-weight:700;font-family:'Noto Serif',serif;}
+.logo-text h1{font-family:'Noto Serif',serif;font-size:1.25rem;font-weight:700;color:#1B4D2E;line-height:1.2;}
+.logo-text p{font-size:.72rem;color:#666;letter-spacing:.5px;margin-top:2px;}
+.logo-text .urdu{font-size:1rem;color:#1B4D2E;font-weight:600;direction:rtl;margin-top:4px;}
+.header-contact{text-align:right;}
+.header-contact p{font-size:.78rem;color:#555;margin-bottom:3px;}
+.header-contact a{color:#1B4D2E;font-weight:700;font-size:1rem;text-decoration:none;}
 
-        .features-strip{position:relative;z-index:2;padding:28px 6%;display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;background:rgba(46,204,113,0.06);border-top:1px solid var(--green-border);border-bottom:1px solid var(--green-border);}
-        .feat-item{display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--text-dim);}
-        .feat-item i{color:var(--green);font-size:1.1rem;}
-        .feat-item strong{color:white;}
+nav.main-nav{background:#1B4D2E;border-bottom:3px solid #C9A84C;}
+.nav-inner{padding:0 5%;display:flex;align-items:center;}
+nav.main-nav a{display:block;padding:13px 18px;color:rgba(255,255,255,.88);text-decoration:none;font-size:.88rem;font-weight:600;border-right:1px solid rgba(255,255,255,.1);transition:.2s;white-space:nowrap;}
+nav.main-nav a:hover,nav.main-nav a.active{background:#C9A84C;color:#1a1a00;}
+.nav-wa{margin-left:auto;background:#25D366 !important;border:none !important;display:flex;align-items:center;gap:6px;}
+.nav-wa:hover{background:#1da851 !important;}
 
-        section{position:relative;z-index:1;}
-        .section-title{text-align:center;margin-bottom:4rem;}
-        .section-label{display:inline-block;border:1px solid var(--green-border);color:var(--green);padding:5px 16px;border-radius:100px;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:1rem;}
-        .section-title h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;margin-bottom:1rem;color:white;}
-        .section-title .accent{color:var(--green);}
-        .section-title .gold{color:var(--gold);}
-        .section-title p{color:var(--text-dim);font-size:1rem;}
-        .gold-line{width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:1rem auto 0;}
+.ticker-wrap{background:#C9A84C;padding:7px 5%;display:flex;align-items:center;gap:1rem;overflow:hidden;}
+.ticker-label{background:#1B4D2E;color:#fff;padding:3px 12px;font-size:.75rem;font-weight:700;border-radius:3px;white-space:nowrap;letter-spacing:1px;}
+.ticker-track{overflow:hidden;flex:1;}
+.ticker-text{display:inline-block;white-space:nowrap;animation:ticker 30s linear infinite;color:#1a1a00;font-size:.82rem;font-weight:600;}
+@keyframes ticker{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
 
-        .stats{padding:90px 6%;background:var(--green-mid);}
-        .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;}
-        .stat-card{padding:2.8rem 2rem;text-align:center;background:var(--glass);border:1px solid var(--green-border);border-radius:20px;transition:0.3s;}
-        .stat-card:hover{background:var(--green-light);transform:translateY(-5px);}
-        .stat-card h2{font-family:'Playfair Display',serif;font-size:3rem;font-weight:800;color:var(--green);margin-bottom:0.4rem;}
-        .stat-card p{color:var(--text-dim);font-size:0.9rem;}
+.hero{position:relative;height:420px;overflow:hidden;}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s;background-size:cover;background-position:center;}
+.hero-slide.active{opacity:1;}
+.s1{background-image:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&h=600&fit=crop');}
+.s2{background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&h=600&fit=crop');}
+.s3{background-image:url('https://images.unsplash.com/photo-1448630360428-65456885c650?w=1400&h=600&fit=crop');}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(27,77,46,.88) 0%,rgba(27,77,46,.5) 60%,transparent 100%);}
+.hero-content{position:absolute;inset:0;display:flex;align-items:center;padding:0 5%;}
+.hero-text{max-width:560px;color:#fff;}
+.hero-badge{display:inline-block;background:#C9A84C;color:#1a1a00;padding:5px 14px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;}
+.hero-text h2{font-family:'Noto Serif',serif;font-size:clamp(1.6rem,3.5vw,2.8rem);font-weight:700;line-height:1.25;margin-bottom:1rem;}
+.hero-text p{font-size:1rem;color:rgba(255,255,255,.85);line-height:1.7;margin-bottom:1.5rem;}
+.hero-btns{display:flex;gap:.8rem;flex-wrap:wrap;}
+.btn-gold{padding:12px 28px;background:#C9A84C;color:#1a1a00;text-decoration:none;font-weight:700;font-size:.9rem;border:2px solid #C9A84C;transition:.2s;display:inline-block;}
+.btn-gold:hover{background:transparent;color:#C9A84C;}
+.btn-ow{padding:12px 28px;background:transparent;color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;border:2px solid rgba(255,255,255,.6);transition:.2s;display:inline-block;}
+.btn-ow:hover{background:rgba(255,255,255,.15);}
+.slide-dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;border:none;transition:.2s;}
+.dot.active{background:#C9A84C;}
 
-        .amenities{padding:100px 6%;background:var(--green-deep);}
-        .amenities-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;}
-        .amenity-card{background:var(--glass);border:1px solid var(--glass-border);padding:2.5rem 2rem;border-radius:20px;transition:0.4s;position:relative;overflow:hidden;}
-        .amenity-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:0;transition:0.4s;}
-        .amenity-card:hover::before{opacity:1;}
-        .amenity-card:hover{border-color:var(--green-border);background:var(--green-light);transform:translateY(-8px);}
-        .amenity-icon{width:56px;height:56px;background:var(--green-light);border:1px solid var(--green-border);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:1.8rem;}
-        .amenity-icon i{font-size:1.5rem;color:var(--green);}
-        .amenity-card h3{font-size:1.2rem;margin-bottom:0.7rem;font-weight:700;color:white;}
-        .amenity-card p{color:var(--text-dim);font-size:0.92rem;line-height:1.7;}
+.quick-stats{background:#fff;border-bottom:1px solid #ddd;padding:0 5%;}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));border-left:1px solid #ddd;}
+.stat-box{padding:18px 12px;text-align:center;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+.stat-box h3{font-family:'Noto Serif',serif;font-size:1.8rem;font-weight:700;color:#1B4D2E;}
+.stat-box p{font-size:.75rem;color:#666;margin-top:3px;}
 
-        .plots{padding:100px 6%;background:var(--green-mid);}
-        .plots-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.8rem;}
-        .plot-card{background:var(--glass);border:1px solid var(--green-border);border-radius:24px;overflow:hidden;transition:0.4s;text-align:center;}
-        .plot-card:hover{transform:translateY(-10px);box-shadow:0 20px 50px rgba(46,204,113,0.15);border-color:var(--green);}
-        .plot-header{padding:2.5rem 2rem 1.5rem;background:linear-gradient(135deg,var(--green-mid),var(--green-deep));border-bottom:1px solid var(--green-border);}
-        .plot-size{font-family:'Playfair Display',serif;font-size:3rem;font-weight:800;color:var(--green);line-height:1;}
-        .plot-unit{font-size:0.85rem;color:var(--text-dim);margin-top:0.3rem;letter-spacing:2px;text-transform:uppercase;}
-        .plot-body{padding:2rem;}
-        .plot-price{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--gold);margin-bottom:1.2rem;}
-        .plot-features{list-style:none;text-align:left;}
-        .plot-features li{color:var(--text-dim);font-size:0.88rem;padding:0.4rem 0;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--glass-border);}
-        .plot-features li:last-child{border:none;}
-        .plot-features i{color:var(--green);font-size:0.8rem;}
-        .plot-cta{display:block;margin:1.5rem 0 0;padding:12px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;text-decoration:none;font-weight:700;font-size:0.9rem;border-radius:10px;transition:0.3s;}
-        .plot-cta:hover{box-shadow:0 8px 25px rgba(46,204,113,0.4);}
-        .plot-card.featured{border-color:var(--gold);}
-        .plot-card.featured .plot-size{color:var(--gold);}
-        .popular-tag{background:linear-gradient(135deg,var(--gold),#c9a800);color:#1a1a00;padding:5px 14px;border-radius:100px;font-size:0.7rem;font-weight:800;letter-spacing:1px;display:inline-block;margin-bottom:1rem;}
+.main-content{padding:28px 5%;display:grid;grid-template-columns:1fr 310px;gap:22px;align-items:start;}
 
-        .apply-section{padding:100px 6%;background:var(--green-deep);}
-        .apply-container{max-width:700px;margin:0 auto;background:var(--glass);border:1px solid var(--green-border);border-radius:24px;padding:3rem;box-shadow:0 30px 80px rgba(0,0,0,0.3);}
-        .info-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.5rem;}
-        .info-box{text-align:center;padding:1.5rem;background:var(--green-light);border:1px solid var(--green-border);border-radius:14px;}
-        .info-box i{font-size:2rem;color:var(--green);margin-bottom:0.8rem;display:block;}
-        .info-box strong{font-size:0.95rem;}
-        .info-box p{color:var(--text-dim);font-size:0.82rem;margin-top:0.3rem;}
-        .apply-form{display:flex;flex-direction:column;gap:1.2rem;}
-        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
-        .form-group{display:flex;flex-direction:column;gap:0.5rem;}
-        .form-group label{font-size:0.85rem;font-weight:600;color:var(--green);letter-spacing:0.5px;}
-        .form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.05);border:1px solid var(--glass-border);border-radius:10px;padding:13px 16px;color:white;font-size:0.92rem;outline:none;transition:0.3s;font-family:'Nunito',sans-serif;}
-        .form-group input::placeholder,.form-group textarea::placeholder{color:var(--text-dim);}
-        .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--green-border);box-shadow:0 0 0 3px rgba(46,204,113,0.1);}
-        .form-group select option{background:var(--green-mid);}
-        .form-group textarea{resize:vertical;min-height:100px;}
-        .form-submit{padding:16px;width:100%;background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;border:none;cursor:pointer;font-weight:700;font-size:1rem;font-family:'Nunito',sans-serif;border-radius:12px;transition:0.3s;}
-        .form-submit:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(46,204,113,0.5);}
-        .overseas-note{text-align:center;color:var(--text-dim);font-size:0.82rem;margin-top:1rem;display:flex;align-items:center;justify-content:center;gap:6px;}
-        .overseas-note i{color:var(--green);}
+.box{background:#fff;border:1px solid #ddd;margin-bottom:20px;}
+.box-header{background:#1B4D2E;color:#fff;padding:10px 18px;display:flex;align-items:center;gap:10px;}
+.box-header i{color:#C9A84C;font-size:1rem;}
+.box-header h3{font-size:.9rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;}
+.box-body{padding:18px;}
 
-        .testimonials{padding:100px 6%;background:var(--green-mid);}
-        .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.8rem;}
-        .testimonial-card{background:var(--glass);border:1px solid var(--green-border);padding:2.5rem;border-radius:20px;transition:0.3s;}
-        .testimonial-card:hover{box-shadow:0 10px 35px rgba(46,204,113,0.1);}
-        .stars{color:var(--gold);font-size:1.1rem;margin-bottom:1rem;letter-spacing:2px;}
-        .testimonial-card p{color:var(--text-dim);font-style:italic;font-size:0.98rem;line-height:1.8;margin-bottom:1.5rem;}
-        .reviewer{display:flex;align-items:center;gap:1rem;}
-        .reviewer-icon{width:44px;height:44px;background:var(--green-light);border:1px solid var(--green-border);border-radius:50%;display:flex;align-items:center;justify-content:center;}
-        .reviewer-icon i{color:var(--green);font-size:1.1rem;}
-        .reviewer h4{font-weight:700;font-size:0.92rem;}
-        .reviewer span{color:var(--text-dim);font-size:0.78rem;}
+/* ── FILTER TABS ── */
+.filter-tabs{display:flex;gap:0;flex-wrap:wrap;margin-bottom:16px;}
+.ftab{padding:8px 16px;border:1px solid #ddd;border-right:none;background:#f5f5f0;font-size:.82rem;font-weight:600;cursor:pointer;color:#555;transition:.2s;font-family:'Source Sans 3',sans-serif;}
+.ftab:last-child{border-right:1px solid #ddd;}
+.ftab:hover,.ftab.active{background:#1B4D2E;color:#fff;border-color:#1B4D2E;}
 
-        .location-section{padding:100px 6%;background:var(--green-deep);}
-        .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
-        .location-info h3{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1.5rem;color:white;}
-        .loc-item{display:flex;gap:1rem;padding:1.2rem;background:var(--glass);border:1px solid var(--glass-border);border-radius:14px;margin-bottom:1rem;transition:0.3s;}
-        .loc-item:hover{border-color:var(--green-border);}
-        .loc-icon{width:42px;height:42px;background:var(--green-light);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-        .loc-icon i{color:var(--green);}
-        .loc-item h4{font-size:0.9rem;font-weight:700;margin-bottom:0.2rem;}
-        .loc-item p{color:var(--text-dim);font-size:0.85rem;}
-        .map-container{border-radius:20px;overflow:hidden;border:2px solid var(--green-border);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;background:var(--green-mid);color:var(--text-dim);text-align:center;padding:2rem;}
-        .map-container i{font-size:3.5rem;color:var(--green);opacity:0.5;}
-        .map-container a{padding:12px 28px;background:linear-gradient(135deg,var(--green),var(--green-dark));color:white;text-decoration:none;border-radius:10px;font-weight:700;font-size:0.9rem;transition:0.3s;}
-        .map-container a:hover{box-shadow:0 8px 25px rgba(46,204,113,0.4);}
+/* ── LISTING CARDS GRID ── */
+.lc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;}
+.lc{background:#fff;border:1px solid #ddd;cursor:pointer;transition:.25s;position:relative;}
+.lc:hover{border-color:#1B4D2E;box-shadow:0 4px 20px rgba(27,77,46,.15);transform:translateY(-3px);}
+.lc-img{position:relative;height:170px;overflow:hidden;}
+.lc-img img{width:100%;height:100%;object-fit:cover;transition:.4s;}
+.lc:hover .lc-img img{transform:scale(1.06);}
+.lc-tag{position:absolute;top:10px;left:10px;padding:3px 10px;font-size:.7rem;font-weight:700;letter-spacing:.5px;}
+.t-sale{background:#1B4D2E;color:#fff;}
+.t-corner{background:#C9A84C;color:#1a1a00;}
+.t-hot{background:#c0392b;color:#fff;}
+.lc-size{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.65);color:#fff;padding:3px 9px;font-size:.72rem;font-weight:600;}
+.lc-body{padding:12px;}
+.lc-loc{color:#888;font-size:.75rem;margin-bottom:4px;display:flex;align-items:center;gap:4px;}
+.lc-loc i{color:#1B4D2E;font-size:.8rem;}
+.lc-title{font-size:.9rem;font-weight:700;margin-bottom:6px;color:#1a1a1a;line-height:1.3;}
+.lc-price{font-family:'Noto Serif',serif;font-size:1.15rem;font-weight:700;color:#1B4D2E;margin-bottom:8px;}
+.lc-features{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;}
+.lc-features span{font-size:.72rem;color:#666;display:flex;align-items:center;gap:3px;}
+.lc-features i{color:#1B4D2E;font-size:.7rem;}
+.lc-btn{width:100%;padding:9px;background:#1B4D2E;color:#fff;border:none;font-size:.82rem;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;display:flex;align-items:center;justify-content:center;gap:6px;transition:.2s;}
+.lc-btn:hover{background:#2d7a4a;}
+.view-more-btn{width:100%;padding:11px;background:#f5f5f0;border:2px dashed #ccc;color:#666;font-size:.85rem;font-weight:600;cursor:default;text-align:center;margin-top:8px;font-family:'Source Sans 3',sans-serif;}
 
-        footer{padding:80px 6% 40px;background:var(--green-deep);border-top:1px solid var(--green-border);}
-        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3rem;margin-bottom:3rem;}
-        .footer-brand h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:white;margin-bottom:0.3rem;}
-        .footer-brand .sub{color:var(--green);font-size:0.65rem;letter-spacing:3px;font-weight:700;margin-bottom:1.2rem;display:block;}
-        .footer-brand p{color:var(--text-dim);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;}
-        .social-links{display:flex;gap:0.8rem;}
-        .social-links a{width:40px;height:40px;border:1px solid var(--green-border);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:1rem;text-decoration:none;transition:0.3s;}
-        .social-links a:hover{border-color:var(--green);color:var(--green);background:var(--green-light);}
-        .footer-col h4{font-weight:700;margin-bottom:1.2rem;color:white;font-size:0.95rem;}
-        .footer-col a,.footer-col p{color:var(--text-dim);font-size:0.88rem;margin-bottom:0.7rem;display:flex;align-items:flex-start;gap:8px;text-decoration:none;transition:0.2s;}
-        .footer-col a:hover{color:var(--green);}
-        .footer-col i{color:var(--green);margin-top:3px;font-size:0.85rem;flex-shrink:0;}
-        .footer-divider{border:none;border-top:1px solid var(--green-border);margin:2rem 0;}
-        .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
-        .footer-bottom p{color:var(--text-dim);font-size:0.82rem;}
-        .footer-bottom span{color:var(--green);}
-        .footer-cta-wrap{text-align:center;margin-bottom:2rem;}
+/* ── MODAL ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:2000;align-items:center;justify-content:center;padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal{background:#fff;max-width:680px;width:100%;max-height:90vh;overflow-y:auto;position:relative;}
+.modal-close{position:absolute;top:12px;right:14px;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#666;z-index:1;}
+.modal-close:hover{color:#1B4D2E;}
+.modal-img{height:260px;overflow:hidden;}
+.modal-img img{width:100%;height:100%;object-fit:cover;}
+.modal-body{padding:24px;}
+.modal-tag{display:inline-block;padding:4px 12px;font-size:.75rem;font-weight:700;letter-spacing:1px;margin-bottom:12px;}
+.modal-title{font-family:'Noto Serif',serif;font-size:1.4rem;font-weight:700;color:#1B4D2E;margin-bottom:4px;}
+.modal-loc{color:#888;font-size:.85rem;margin-bottom:14px;display:flex;align-items:center;gap:5px;}
+.modal-price{font-family:'Noto Serif',serif;font-size:1.8rem;font-weight:700;color:#1B4D2E;margin-bottom:18px;}
+.modal-specs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;padding:16px;background:#f9fdf9;border:1px solid #c3dfd0;}
+.spec-item strong{display:block;font-size:.72rem;text-transform:uppercase;color:#888;letter-spacing:.5px;margin-bottom:2px;}
+.spec-item span{font-size:.9rem;font-weight:600;color:#1a1a1a;}
+.modal-desc{font-size:.88rem;color:#555;line-height:1.7;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid #eee;}
+.modal-actions{display:flex;gap:10px;}
+.modal-wa{flex:1;padding:13px;background:#25D366;color:#fff;border:none;font-size:.95rem;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:.2s;}
+.modal-wa:hover{background:#128C7E;}
+.modal-call{padding:13px 20px;background:#1B4D2E;color:#fff;border:none;font-size:.95rem;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;display:flex;align-items:center;gap:8px;text-decoration:none;transition:.2s;}
+.modal-call:hover{background:#2d7a4a;}
 
-        .wa-float{position:fixed;bottom:28px;right:28px;background:#25D366;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:30px;box-shadow:0 8px 25px rgba(37,211,102,0.45);z-index:1001;transition:0.3s;text-decoration:none;}
-        .wa-float:hover{transform:scale(1.1) rotate(10deg);}
+/* ── AMENITIES ── */
+.am-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#ddd;border:1px solid #ddd;}
+.am-item{background:#fff;padding:12px;display:flex;gap:10px;align-items:flex-start;}
+.am-icon{width:34px;height:34px;background:#f0f7f3;border:1px solid #c3dfd0;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.am-icon i{color:#1B4D2E;font-size:.9rem;}
+.am-item h4{font-size:.82rem;font-weight:700;margin-bottom:1px;}
+.am-item p{font-size:.75rem;color:#666;line-height:1.4;}
 
-        @media(max-width:900px){.location-grid{grid-template-columns:1fr;}}
-        @media(max-width:768px){header{padding:1rem 5%;}.brand-name,.nav-cta{display:none;}.form-row{grid-template-columns:1fr;}.info-row{grid-template-columns:1fr;}}
-        @media(max-width:480px){.hero-btns{flex-direction:column;align-items:center;}.cta-green,.cta-gold-btn{width:100%;text-align:center;}.apply-container{padding:2rem 1.5rem;}}
-    </style>
+/* ── SIDEBAR ── */
+.apply-form label{display:block;font-size:.75rem;font-weight:700;color:#333;margin-bottom:3px;margin-top:10px;text-transform:uppercase;letter-spacing:.5px;}
+.apply-form input,.apply-form select,.apply-form textarea{width:100%;padding:9px 11px;border:1px solid #ccc;font-size:.88rem;font-family:'Source Sans 3',sans-serif;outline:none;background:#fff;transition:.2s;}
+.apply-form input:focus,.apply-form select:focus,.apply-form textarea:focus{border-color:#1B4D2E;}
+.apply-form textarea{min-height:70px;resize:vertical;}
+.apply-submit{width:100%;margin-top:12px;padding:12px;background:#1B4D2E;color:#fff;border:none;font-size:.9rem;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:.2s;display:flex;align-items:center;justify-content:center;gap:8px;}
+.apply-submit:hover{background:#2d7a4a;}
+
+.news-item{padding:10px 0;border-bottom:1px solid #eee;display:flex;gap:10px;}
+.news-item:last-child{border-bottom:none;}
+.news-date{background:#1B4D2E;color:#fff;padding:4px 7px;font-size:.68rem;font-weight:700;text-align:center;min-width:46px;height:fit-content;flex-shrink:0;line-height:1.4;}
+.news-item p{font-size:.8rem;line-height:1.5;color:#333;}
+.news-item p a{color:#1B4D2E;text-decoration:none;font-weight:600;}
+
+.contact-list{list-style:none;}
+.contact-list li{padding:9px 0;border-bottom:1px solid #eee;display:flex;gap:10px;align-items:flex-start;font-size:.83rem;}
+.contact-list li:last-child{border-bottom:none;}
+.contact-list i{color:#1B4D2E;width:16px;margin-top:2px;flex-shrink:0;}
+.contact-list strong{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.5px;color:#999;margin-bottom:1px;}
+.contact-list a{color:#1B4D2E;text-decoration:none;font-weight:600;}
+
+.wa-btn-sm{background:#25D366;color:#fff;border:none;padding:6px 12px;font-size:.78rem;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:.2s;display:inline-flex;align-items:center;gap:5px;text-decoration:none;}
+.wa-btn-sm:hover{background:#128C7E;}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.gallery-grid img{width:100%;height:88px;object-fit:cover;display:block;transition:.3s;cursor:pointer;}
+.gallery-grid img:hover{opacity:.8;}
+
+footer{background:#1B4D2E;color:rgba(255,255,255,.85);}
+.footer-top{padding:32px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2rem;}
+.footer-col h4{color:#C9A84C;font-size:.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:.9rem;padding-bottom:7px;border-bottom:1px solid rgba(201,168,76,.3);}
+.footer-col p,.footer-col a{font-size:.8rem;color:rgba(255,255,255,.7);margin-bottom:6px;display:flex;align-items:flex-start;gap:7px;text-decoration:none;line-height:1.5;transition:.2s;}
+.footer-col a:hover{color:#C9A84C;}
+.footer-col i{color:#C9A84C;margin-top:2px;font-size:.78rem;flex-shrink:0;}
+.footer-social{display:flex;gap:7px;margin-top:.9rem;}
+.footer-social a{width:32px;height:32px;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.65);font-size:.88rem;text-decoration:none;transition:.2s;}
+.footer-social a:hover{border-color:#C9A84C;color:#C9A84C;}
+.footer-bottom{background:#0f3520;padding:11px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;}
+.footer-bottom p{font-size:.73rem;color:rgba(255,255,255,.5);}
+.footer-bottom span{color:#C9A84C;}
+
+.wa-float{position:fixed;bottom:22px;right:22px;background:#25D366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,.5);z-index:999;transition:.3s;}
+.wa-float:hover{transform:scale(1.1);}
+
+@media(max-width:900px){.main-content{grid-template-columns:1fr;}}
+@media(max-width:768px){nav.main-nav{overflow-x:auto;}.am-grid{grid-template-columns:1fr;}.gallery-grid{grid-template-columns:repeat(2,1fr);}.footer-bottom{flex-direction:column;text-align:center;}.gov-bar-right,.header-contact{display:none;}.modal-specs{grid-template-columns:1fr;}.modal-actions{flex-direction:column;}}
+@media(max-width:480px){.hero-btns{flex-direction:column;}.lc-grid{grid-template-columns:1fr 1fr;}}
+</style>
 </head>
 <body>
-<div class="amb amb-1"></div>
-<div class="amb amb-2"></div>
-<div class="leaves" id="leaves"></div>
 
-<header id="hdr">
-    <div class="logo-wrap">
-        <div class="logo-mark">GS</div>
-        <div>
-            <div class="brand-name">Gulshan-e-Subhan</div>
-            <div class="brand-sub">Housing Scheme · Hyderabad</div>
-        </div>
+<!-- GOV BAR -->
+<div class="gov-bar">
+    <p>🇵🇰 &nbsp;Approved Housing Society | Hyderabad Bypass, Sindh, Pakistan</p>
+    <div class="gov-bar-right">
+        <a href="tel:+923414200004"><i class="fas fa-phone"></i> +92 341 4200004</a>
+        <a href="mailto:mr.habib@gulshanesubhan.com"><i class="fas fa-envelope"></i> mr.habib@gulshanesubhan.com</a>
+        <a href="https://wa.me/923414200004"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
-    <div class="header-right">
-        <div class="possession-badge"><span></span> Possession Ready</div>
-        <a href="https://wa.me/923123456789?text=Assalam%20o%20Alaikum%2C%20I%20am%20interested%20in%20Gulshan-e-Subhan%20Housing%20Scheme." class="nav-cta"><i class="fab fa-whatsapp" style="margin-right:5px;"></i> Enquire Now</a>
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="header-main">
+        <div class="logo-area">
+            <div class="logo-emblem"><span>GS</span></div>
+            <div class="logo-text">
+                <h1>Gulshan-e-Subhan Housing Scheme</h1>
+                <p>Bypass Road, near Hatri / New Sabzi Mandi, Hyderabad, Sindh</p>
+                <div class="urdu">گلشنِ سبحان ہاؤسنگ سکیم</div>
+            </div>
+        </div>
+        <div class="header-contact">
+            <p>Mr. Habib — Sales Manager</p>
+            <a href="tel:+923414200004"><i class="fas fa-phone"></i> +92 341 4200004</a>
+        </div>
     </div>
 </header>
 
-<section class="hero">
-    <div class="hero-eyebrow gsap-hero"><i class="fas fa-leaf"></i> Gated Community · Bypass Road Hyderabad</div>
-    <h1 class="gsap-hero">Your <span class="green-text">Dream Home,</span><br>Our <span class="gold-text">Commitment</span></h1>
-    <p class="gsap-hero">Hyderabad's premier fully-developed gated housing society — lush green parks, wide roads, underground utilities, and immediate possession. Your peaceful future starts here.</p>
-    <div class="hero-btns gsap-hero">
-        <a href="#apply" class="cta-green"><i class="fas fa-file-alt" style="margin-right:8px;"></i> Apply for a Plot</a>
-        <a href="https://wa.me/923123456789?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20know%20more%20about%20Gulshan-e-Subhan." class="cta-gold-btn"><i class="fab fa-whatsapp" style="margin-right:8px;"></i> WhatsApp Us</a>
+<!-- NAV -->
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="#home" class="active">Home</a>
+        <a href="#listings">Available Plots</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/923414200004" class="nav-wa"><i class="fab fa-whatsapp"></i> Enquire Now</a>
     </div>
-</section>
+</nav>
 
-<div class="features-strip">
-    <div class="feat-item"><i class="fas fa-shield-alt"></i><span><strong>Gated</strong> Community</span></div>
-    <div class="feat-item"><i class="fas fa-bolt"></i><span><strong>Underground</strong> Electricity</span></div>
-    <div class="feat-item"><i class="fas fa-tree"></i><span><strong>Lush</strong> Parks</span></div>
-    <div class="feat-item"><i class="fas fa-mosque"></i><span><strong>Mosque</strong> & Schools</span></div>
-    <div class="feat-item"><i class="fas fa-home"></i><span><strong>Immediate</strong> Possession</span></div>
-    <div class="feat-item"><i class="fas fa-star"></i><span><strong>4.5★</strong> Rated</span></div>
+<!-- TICKER -->
+<div class="ticker-wrap">
+    <div class="ticker-label">📢 NOTICE</div>
+    <div class="ticker-track">
+        <div class="ticker-text">✅ Plots Available: 120 | 200 | 400 Sq Yards &nbsp;|&nbsp; 🏠 Immediate Possession Available &nbsp;|&nbsp; 🔑 Registry & Intekal Ready &nbsp;|&nbsp; ⚡ Underground Electricity & Gas &nbsp;|&nbsp; 🌿 Fully Developed Gated Community &nbsp;|&nbsp; 🇵🇰 Overseas Pakistanis Welcome &nbsp;|&nbsp; 📞 +92 341 4200004 &nbsp;|&nbsp; 🕌 Mosque Sector Operational &nbsp;|&nbsp; 🛣️ 60ft Main Boulevard Completed</div>
+    </div>
 </div>
 
-<section class="stats">
-    <div class="section-title">
-        <div class="section-label">Development Status</div>
-        <h2>Fully <span class="accent">Developed</span> & Ready</h2>
-        <p>No waiting — move in or start construction today.</p>
-        <div class="gold-line"></div>
-    </div>
-    <div class="stats-grid">
-        <div class="stat-card gsap-reveal"><h2>3</h2><p><i class="fas fa-ruler-combined" style="color:var(--green);margin-right:6px;"></i> Plot Sizes Available</p></div>
-        <div class="stat-card gsap-reveal"><h2>100%</h2><p><i class="fas fa-check-circle" style="color:var(--green);margin-right:6px;"></i> Development Complete</p></div>
-        <div class="stat-card gsap-reveal"><h2>4.5★</h2><p><i class="fas fa-star" style="color:var(--green);margin-right:6px;"></i> Community Rating</p></div>
-        <div class="stat-card gsap-reveal"><h2>Now</h2><p><i class="fas fa-key" style="color:var(--green);margin-right:6px;"></i> Possession Available</p></div>
-    </div>
-</section>
-
-<section class="amenities">
-    <div class="section-title">
-        <div class="section-label">World-Class Features</div>
-        <h2>Premium <span class="accent">Amenities</span></h2>
-        <p>Everything a modern family needs — all within the society.</p>
-    </div>
-    <div class="amenities-grid">
-        <div class="amenity-card gsap-reveal"><div class="amenity-icon"><i class="fas fa-bolt"></i></div><h3>Underground Electricity</h3><p>No overhead wires — fully underground electrical infrastructure with uninterrupted power supply throughout the society.</p></div>
-        <div class="amenity-card gsap-reveal"><div class="amenity-icon"><i class="fas fa-fire"></i></div><h3>Gas Infrastructure</h3><p>Complete underground gas pipeline network installed across all sectors — ready for immediate home construction.</p></div>
-        <div class="amenity-card gsap-reveal"><div class="amenity-icon"><i class="fas fa-tint"></i></div><h3>Water Supply System</h3><p>Modern water supply and sewerage system with dedicated treatment infrastructure for clean, reliable water access.</p></div>
-        <div class="amenity-card gsap-reveal"><div class="amenity-icon"><i class="fas fa-tree"></i></div><h3>Parks & Green Spaces</h3><p>Beautifully landscaped parks and green belts throughout the society — perfect for families and children's recreation.</p></div>
-        <div class="amenity-card gsap-reveal"><div class="amenity-icon"><i class="fas fa-mosque"></i></div><h3>Mosque & Community Centre</h3><p>Dedicated mosque sector with a spacious community centre — fostering a peaceful, spiritual neighborhood environment.</p></div>
-        <div class="amenity-card gsap-reveal"><div class="amenity-icon"><i class="fas fa-graduation-cap"></i></div><h3>Educational Sector</h3><p>Reserved educational zone for schools and academies — ensuring quality education is available right within your community.</p></div>
-    </div>
-</section>
-
-<section class="plots">
-    <div class="section-title">
-        <div class="section-label">Choose Your Plot</div>
-        <h2>Plot <span class="gold">Sizes</span> & Options</h2>
-        <p>Three sizes — all with immediate possession and full development.</p>
-    </div>
-    <div class="plots-grid">
-        <div class="plot-card gsap-reveal">
-            <div class="plot-header"><div class="plot-size">120</div><div class="plot-unit">Square Yards</div></div>
-            <div class="plot-body">
-                <div class="plot-price">On Request</div>
-                <ul class="plot-features">
-                    <li><i class="fas fa-check"></i> Registry Ready</li>
-                    <li><i class="fas fa-check"></i> Underground Utilities</li>
-                    <li><i class="fas fa-check"></i> Wide Road Access</li>
-                    <li><i class="fas fa-check"></i> Immediate Possession</li>
-                </ul>
-                <a href="https://wa.me/923123456789?text=I%20am%20interested%20in%20120%20Sq%20Yard%20plot." class="plot-cta">Enquire Now</a>
-            </div>
-        </div>
-        <div class="plot-card featured gsap-reveal">
-            <div class="plot-header"><div class="popular-tag">⭐ Most Popular</div><div class="plot-size">200</div><div class="plot-unit">Square Yards</div></div>
-            <div class="plot-body">
-                <div class="plot-price">On Request</div>
-                <ul class="plot-features">
-                    <li><i class="fas fa-check"></i> Corner Options Available</li>
-                    <li><i class="fas fa-check"></i> Park Facing Available</li>
-                    <li><i class="fas fa-check"></i> Underground Utilities</li>
-                    <li><i class="fas fa-check"></i> Immediate Possession</li>
-                </ul>
-                <a href="https://wa.me/923123456789?text=I%20am%20interested%20in%20200%20Sq%20Yard%20plot." class="plot-cta">Enquire Now</a>
-            </div>
-        </div>
-        <div class="plot-card gsap-reveal">
-            <div class="plot-header"><div class="plot-size">400</div><div class="plot-unit">Square Yards</div></div>
-            <div class="plot-body">
-                <div class="plot-price">On Request</div>
-                <ul class="plot-features">
-                    <li><i class="fas fa-check"></i> Premium Locations</li>
-                    <li><i class="fas fa-check"></i> Boulevard Access</li>
-                    <li><i class="fas fa-check"></i> Underground Utilities</li>
-                    <li><i class="fas fa-check"></i> Immediate Possession</li>
-                </ul>
-                <a href="https://wa.me/923123456789?text=I%20am%20interested%20in%20400%20Sq%20Yard%20plot." class="plot-cta">Enquire Now</a>
+<!-- HERO -->
+<div class="hero" id="home">
+    <div class="hero-slide s1 active"></div>
+    <div class="hero-slide s2"></div>
+    <div class="hero-slide s3"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">Fully Developed · Possession Ready</div>
+            <h2>Your Dream Home,<br>Our Commitment to Excellence</h2>
+            <p>Gulshan-e-Subhan Housing Scheme — Hyderabad's premier gated community on Bypass Road with underground utilities, lush parks & immediate possession.</p>
+            <div class="hero-btns">
+                <a href="#listings" class="btn-gold"><i class="fas fa-search"></i> &nbsp;View All Plots</a>
+                <a href="#apply" class="btn-ow"><i class="fas fa-file-alt"></i> &nbsp;Apply Now</a>
             </div>
         </div>
     </div>
-</section>
-
-<section class="apply-section" id="apply">
-    <div class="section-title">
-        <div class="section-label">Register Interest</div>
-        <h2>Apply <span class="accent">Now</span></h2>
-        <p>Overseas Pakistanis & local buyers — fill the form and we'll call you back.</p>
+    <div class="slide-dots">
+        <button class="dot active" onclick="goSlide(0)"></button>
+        <button class="dot" onclick="goSlide(1)"></button>
+        <button class="dot" onclick="goSlide(2)"></button>
     </div>
-    <div class="apply-container gsap-reveal">
-        <div class="info-row">
-            <div class="info-box"><i class="fas fa-plane"></i><strong>Overseas Pakistanis</strong><p>Apply from UK, UAE, USA, KSA & more</p></div>
-            <div class="info-box"><i class="fas fa-shield-alt"></i><strong>Secure Investment</strong><p>Verified plots, clear documents, zero fraud</p></div>
+</div>
+
+<!-- QUICK STATS -->
+<div class="quick-stats">
+    <div class="stats-row">
+        <div class="stat-box"><h3>120</h3><p>Min Sq Yards</p></div>
+        <div class="stat-box"><h3>400</h3><p>Max Sq Yards</p></div>
+        <div class="stat-box"><h3>100%</h3><p>Developed</p></div>
+        <div class="stat-box"><h3>24/7</h3><p>Security</p></div>
+        <div class="stat-box"><h3>4.5★</h3><p>Rating</p></div>
+        <div class="stat-box"><h3>Now</h3><p>Possession</p></div>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+<div class="main-col">
+
+<!-- LISTINGS -->
+<div class="box" id="listings">
+    <div class="box-header"><i class="fas fa-list"></i><h3>Available Plots — 2026 (Click to View Details)</h3></div>
+    <div class="box-body">
+        <div class="filter-tabs">
+            <button class="ftab active" onclick="filterTab(this,'all')">All Plots</button>
+            <button class="ftab" onclick="filterTab(this,'120')">120 Sq Yd</button>
+            <button class="ftab" onclick="filterTab(this,'200')">200 Sq Yd</button>
+            <button class="ftab" onclick="filterTab(this,'400')">400 Sq Yd</button>
+            <button class="ftab" onclick="filterTab(this,'corner')">Corner</button>
+            <button class="ftab" onclick="filterTab(this,'park')">Park Facing</button>
         </div>
-        <form class="apply-form" onsubmit="submitForm(event)">
-            <div class="form-row">
-                <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name" required></div>
-                <div class="form-group"><label>WhatsApp Number *</label><input type="tel" placeholder="+92 3XX XXXXXXX" required></div>
+
+        <div class="lc-grid" id="lc-grid">
+
+            <div class="lc" data-cat="120" onclick="openModal(0)">
+                <div class="lc-header" style="background:#1B4D2E;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:26px;color:#C9A84C;font-weight:700;line-height:1.8;direction:rtl;">۱۲۰ گز پلاٹ</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:2px;">120 Sq Yards — Residential</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۵۵ لاکھ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        بلاک اے، گلشنِ سبحان<br>
+                        رجسٹری تیار ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
             </div>
-            <div class="form-row">
-                <div class="form-group"><label>Plot Size Interest</label><select><option value="">Select size</option><option>120 Sq Yards</option><option>200 Sq Yards</option><option>400 Sq Yards</option><option>Not decided yet</option></select></div>
-                <div class="form-group"><label>Your Location</label><select><option value="">Where are you based?</option><option>Hyderabad</option><option>Karachi</option><option>UAE / Gulf</option><option>UK / Europe</option><option>USA / Canada</option><option>Other</option></select></div>
+
+            <div class="lc" data-cat="120 corner" onclick="openModal(1)">
+                <div class="lc-header" style="background:#C9A84C;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:24px;color:#1B4D2E;font-weight:700;line-height:1.8;direction:rtl;">کارنر پلاٹ ۱۲۰ گز</div>
+                    <div style="font-size:11px;color:#3d2a00;margin-top:2px;">120 Sq Yards — Corner</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۶۲ لاکھ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        بلاک بی، ڈبل روڈ<br>
+                        دو طرف کھلا ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
             </div>
-            <div class="form-group"><label>Message / Query (Optional)</label><textarea placeholder="Any specific requirements or questions..."></textarea></div>
-            <button type="submit" class="form-submit"><i class="fas fa-paper-plane" style="margin-right:8px;"></i> Submit via WhatsApp</button>
-        </form>
-        <p class="overseas-note"><i class="fas fa-lock"></i> Your information is private and only used to contact you.</p>
-    </div>
-</section>
 
-<section class="testimonials">
-    <div class="section-title">
-        <div class="section-label">Resident Stories</div>
-        <h2>What Residents <span class="accent">Say</span></h2>
-        <p>Real feedback from our community members.</p>
-    </div>
-    <div class="testimonials-grid">
-        <div class="testimonial-card gsap-reveal"><div class="stars">★★★★★</div><p>"The development work is very fast. One of the best societies on Hyderabad Bypass. Roads are wide, greenery is excellent and the environment is very peaceful."</p><div class="reviewer"><div class="reviewer-icon"><i class="fas fa-user"></i></div><div><h4>Kamran Shah</h4><span>Verified Resident · Google Review</span></div></div></div>
-        <div class="testimonial-card gsap-reveal"><div class="stars">★★★★★</div><p>"Secure environment for families. I've already started my house construction here. The infrastructure is complete and the security is very reliable."</p><div class="reviewer"><div class="reviewer-icon"><i class="fas fa-user"></i></div><div><h4>Bilal Memon</h4><span>Plot Owner · Google Review</span></div></div></div>
-        <div class="testimonial-card gsap-reveal"><div class="stars">★★★★</div><p>"Excellent location on the Bypass Road. A bit far from the city centre but absolutely perfect for peaceful, secure family living. Great investment value."</p><div class="reviewer"><div class="reviewer-icon"><i class="fas fa-user"></i></div><div><h4>Faraz Ahmed</h4><span>Investor · Google Review</span></div></div></div>
-    </div>
-</section>
+            <div class="lc" data-cat="120" onclick="openModal(2)">
+                <div class="lc-header" style="background:#1B4D2E;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:24px;color:#C9A84C;font-weight:700;line-height:1.8;direction:rtl;">مسجد کے قریب ۱۲۰ گز</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:2px;">120 Sq Yards — Near Mosque</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۵۸ لاکھ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        مسجد سیکٹر کے قریب<br>
+                        رجسٹری تیار ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
 
-<section class="location-section">
-    <div class="section-title">
-        <div class="section-label">Find Us</div>
-        <h2>Our <span class="accent">Location</span></h2>
-        <p>Easily accessible from Hyderabad city and the main Bypass Road.</p>
-    </div>
-    <div class="location-grid">
-        <div class="location-info">
-            <h3>Prime Bypass Location</h3>
-            <div class="loc-item gsap-reveal"><div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Address</h4><p>Bypass Road, near Hatri / New Sabzi Mandi, Hyderabad, Sindh</p></div></div>
-            <div class="loc-item gsap-reveal"><div class="loc-icon"><i class="fab fa-whatsapp"></i></div><div><h4>WhatsApp</h4><p>+92 312 3456789</p></div></div>
-            <div class="loc-item gsap-reveal"><div class="loc-icon"><i class="fas fa-clock"></i></div><div><h4>Office Hours</h4><p>Open 7 Days — 10 AM to 8 PM</p></div></div>
-            <div class="loc-item gsap-reveal"><div class="loc-icon"><i class="fas fa-road"></i></div><div><h4>Nearby Landmark</h4><p>Near New Sabzi Mandi & Hatri, Hyderabad Bypass</p></div></div>
+            <div class="lc" data-cat="200" onclick="openModal(3)">
+                <div class="lc-header" style="background:#1B4D2E;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:26px;color:#C9A84C;font-weight:700;line-height:1.8;direction:rtl;">۲۰۰ گز پلاٹ</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:2px;">200 Sq Yards — Residential</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۹۵ لاکھ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        بلاک سی، گلشنِ سبحان<br>
+                        انتقال مکمل ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
+            <div class="lc" data-cat="200 park" onclick="openModal(4)" style="border:2px solid #c0392b;">
+                <div class="lc-header" style="background:#c0392b;padding:14px;text-align:center;">
+                    <div style="font-size:10px;color:white;font-weight:700;letter-spacing:1.5px;margin-bottom:3px;">🔥 HOT DEAL</div>
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:22px;color:white;font-weight:700;line-height:1.8;direction:rtl;">۲۰۰ گز پارک فیسنگ</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.8);margin-top:2px;">200 Sq Yards — Park Facing</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۱.۱۰ کروڑ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        پارک سامنے — بلاک ڈی<br>
+                        بہترین مقام ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
+            <div class="lc" data-cat="200 corner" onclick="openModal(5)">
+                <div class="lc-header" style="background:#C9A84C;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:22px;color:#1B4D2E;font-weight:700;line-height:1.8;direction:rtl;">۲۰۰ گز بلیوارڈ کارنر</div>
+                    <div style="font-size:11px;color:#3d2a00;margin-top:2px;">200 Sq Yards — Boulevard Corner</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۱.۲۰ کروڑ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        مین ۶۰ فٹ بلیوارڈ<br>
+                        کارنر پلاٹ ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
+            <div class="lc" data-cat="200" onclick="openModal(6)">
+                <div class="lc-header" style="background:#1B4D2E;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:22px;color:#C9A84C;font-weight:700;line-height:1.8;direction:rtl;">اسکول کے قریب ۲۰۰ گز</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:2px;">200 Sq Yards — Near School</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۹۸ لاکھ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        تعلیمی زون کے قریب<br>
+                        رجسٹری تیار ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
+            <div class="lc" data-cat="400" onclick="openModal(7)">
+                <div class="lc-header" style="background:#1B4D2E;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:26px;color:#C9A84C;font-weight:700;line-height:1.8;direction:rtl;">۴۰۰ گز پلاٹ</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.75);margin-top:2px;">400 Sq Yards — Premium</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۱.۸۵ کروڑ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        پریمیم سیکٹر، بلاک ای<br>
+                        ۶۰ فٹ سڑک ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
+            <div class="lc" data-cat="400 corner park" onclick="openModal(8)" style="border:2px solid #C9A84C;">
+                <div class="lc-header" style="background:#C9A84C;padding:14px;text-align:center;">
+                    <div style="font-size:10px;color:#3d2a00;font-weight:700;letter-spacing:1.5px;margin-bottom:3px;">⭐ BEST VALUE</div>
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:20px;color:#1B4D2E;font-weight:700;line-height:1.8;direction:rtl;">۴۰۰ گز کارنر + پارک</div>
+                    <div style="font-size:11px;color:#3d2a00;margin-top:2px;">400 Sq Yards — Corner + Park</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۲.۲۰ کروڑ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        تین طرف کھلا ✓<br>
+                        پارک + کارنر + بلیوارڈ<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
+            <div class="lc" data-cat="400 corner" onclick="openModal(9)">
+                <div class="lc-header" style="background:#C9A84C;padding:14px;text-align:center;">
+                    <div class="urdu-size" style="font-family:'Noto Nastaliq Urdu',serif;font-size:22px;color:#1B4D2E;font-weight:700;line-height:1.8;direction:rtl;">۴۰۰ گز کارنر مارکیٹ</div>
+                    <div style="font-size:11px;color:#3d2a00;margin-top:2px;">400 Sq Yards — Near Market</div>
+                </div>
+                <div class="lc-body" style="direction:rtl;font-family:'Noto Nastaliq Urdu',serif;">
+                    <p class="lc-price" style="direction:rtl;">قیمت: ۲.۰۵ کروڑ</p>
+                    <div style="font-size:13px;color:#555;line-height:2.2;margin-bottom:10px;">
+                        مارکیٹ کے قریب<br>
+                        کارنر پلاٹ ✓<br>
+                        قبضہ فوری ✓
+                    </div>
+                    <button class="lc-btn"><i class="fas fa-eye"></i> تفصیل دیکھیں</button>
+                </div>
+            </div>
+
         </div>
-        <div class="map-container gsap-reveal">
-            <i class="fas fa-map-marked-alt"></i>
-            <p>Bypass Road, near Hatri<br>New Sabzi Mandi, Hyderabad</p>
-            <a href="https://share.google/eUlEgGbEtAsTdvt4d" target="_blank"><i class="fas fa-external-link-alt" style="margin-right:6px;"></i> View on Google Maps</a>
+        <div class="view-more-btn">📞 More plots available — Call or WhatsApp for full inventory</div>
+    </div>
+</div>
+
+<!-- AMENITIES -->
+<div class="box" id="amenities">
+    <div class="box-header"><i class="fas fa-star"></i><h3>Society Amenities & Features</h3></div>
+    <div class="box-body" style="padding:0;">
+        <div class="am-grid">
+            <div class="am-item"><div class="am-icon"><i class="fas fa-shield-alt"></i></div><div><h4>24/7 Gated Security</h4><p>Main gate control with CCTV surveillance throughout society.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-bolt"></i></div><div><h4>Underground Electricity</h4><p>No overhead wires. Full underground electrical network.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-fire"></i></div><div><h4>Sui Gas Pipeline</h4><p>Complete underground Sui Gas ready for construction.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-tint"></i></div><div><h4>Water & Sewerage</h4><p>Modern water supply and sewerage treatment system.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-tree"></i></div><div><h4>Parks & Green Belts</h4><p>Landscaped parks, walking tracks throughout society.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-mosque"></i></div><div><h4>Mosque Sector</h4><p>Dedicated masjid — now operational for residents.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-graduation-cap"></i></div><div><h4>Educational Zone</h4><p>Reserved sector for schools and academies.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-road"></i></div><div><h4>60ft Wide Roads</h4><p>Main boulevard + 30ft sector roads, fully carpeted.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-store"></i></div><div><h4>Commercial Area</h4><p>Dedicated shops and market zone within society.</p></div></div>
+            <div class="am-item"><div class="am-icon"><i class="fas fa-key"></i></div><div><h4>Immediate Possession</h4><p>No waiting — possession available now for all plots.</p></div></div>
         </div>
     </div>
-</section>
+</div>
 
+<!-- GALLERY -->
+<div class="box" id="gallery">
+    <div class="box-header"><i class="fas fa-images"></i><h3>Photo Gallery</h3></div>
+    <div class="box-body" style="padding:4px;">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;">
+
+            <!-- Gate / Entrance -->
+            <div style="background:#e8f5e9;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="20" width="8" height="24" rx="1" fill="#1B4D2E"/>
+                    <rect x="36" y="20" width="8" height="24" rx="1" fill="#1B4D2E"/>
+                    <rect x="4" y="16" width="40" height="6" rx="1" fill="#C9A84C"/>
+                    <rect x="12" y="20" width="24" height="16" rx="1" fill="#2d7a4a"/>
+                    <rect x="20" y="28" width="8" height="12" rx="1" fill="#1B4D2E"/>
+                    <circle cx="20" cy="34" r="1.5" fill="#C9A84C"/>
+                    <rect x="2" y="8" width="4" height="36" rx="1" fill="#555"/>
+                    <rect x="42" y="8" width="4" height="36" rx="1" fill="#555"/>
+                    <rect x="2" y="6" width="4" height="4" rx="1" fill="#C9A84C"/>
+                    <rect x="42" y="6" width="4" height="4" rx="1" fill="#C9A84C"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">مرکزی گیٹ</span>
+            </div>
+
+            <!-- Wide Road -->
+            <div style="background:#f0f4f0;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="18" width="48" height="12" fill="#888"/>
+                    <rect x="0" y="28" width="48" height="3" fill="#555"/>
+                    <rect x="0" y="17" width="48" height="3" fill="#555"/>
+                    <rect x="21" y="22" width="6" height="4" rx="1" fill="#F1C40F"/>
+                    <rect x="0" y="31" width="48" height="17" fill="#c3dfd0"/>
+                    <rect x="0" y="0" width="48" height="17" fill="#c3dfd0"/>
+                    <rect x="6" y="4" width="10" height="12" rx="1" fill="#2d7a4a" opacity=".6"/>
+                    <rect x="32" y="4" width="10" height="12" rx="1" fill="#2d7a4a" opacity=".6"/>
+                    <rect x="6" y="33" width="10" height="12" rx="1" fill="#2d7a4a" opacity=".6"/>
+                    <rect x="32" y="33" width="10" height="12" rx="1" fill="#2d7a4a" opacity=".6"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">۶۰ فٹ سڑک</span>
+            </div>
+
+            <!-- Park -->
+            <div style="background:#e8f5e9;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="36" width="48" height="12" fill="#4CAF50" rx="0"/>
+                    <circle cx="12" cy="22" r="10" fill="#2e7d32"/>
+                    <rect x="10" y="30" width="4" height="8" fill="#5D4037"/>
+                    <circle cx="28" cy="18" r="8" fill="#388e3c"/>
+                    <rect x="26" y="26" width="4" height="10" fill="#5D4037"/>
+                    <circle cx="40" cy="24" r="6" fill="#1B4D2E"/>
+                    <rect x="38" y="30" width="4" height="8" fill="#5D4037"/>
+                    <path d="M4 42 Q8 38 12 42 Q16 38 20 42 Q24 38 28 42 Q32 38 36 42 Q40 38 44 42" stroke="#81C784" stroke-width="1.5" fill="none"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">سبز پارک</span>
+            </div>
+
+            <!-- Underground Utilities -->
+            <div style="background:#f0f4f0;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="24" width="48" height="24" fill="#d4a06a" opacity=".4"/>
+                    <rect x="0" y="22" width="48" height="4" fill="#8B6914"/>
+                    <rect x="8" y="26" width="32" height="3" rx="1.5" fill="#1565C0"/>
+                    <rect x="8" y="31" width="32" height="3" rx="1.5" fill="#C62828"/>
+                    <rect x="8" y="36" width="32" height="3" rx="1.5" fill="#2E7D32"/>
+                    <path d="M20 22 L20 4" stroke="#F9A825" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M28 22 L28 4" stroke="#F9A825" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M16 8 L20 4 L24 8" stroke="#F9A825" stroke-width="2" fill="none"/>
+                    <path d="M24 8 L28 4 L32 8" stroke="#F9A825" stroke-width="2" fill="none"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">زیرزمین سہولیات</span>
+            </div>
+
+            <!-- Mosque -->
+            <div style="background:#e8f5e9;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="8" y="24" width="32" height="20" rx="1" fill="#1B4D2E"/>
+                    <path d="M8 24 Q24 8 40 24" fill="#2d7a4a"/>
+                    <rect x="20" y="28" width="8" height="16" rx="1" fill="#C9A84C"/>
+                    <rect x="4" y="16" width="4" height="28" rx="1" fill="#555"/>
+                    <rect x="40" y="16" width="4" height="28" rx="1" fill="#555"/>
+                    <path d="M6 14 Q6 10 6 10" stroke="#555" stroke-width="2"/>
+                    <circle cx="6" cy="13" r="2" fill="#C9A84C"/>
+                    <circle cx="42" cy="13" r="2" fill="#C9A84C"/>
+                    <path d="M22 8 L24 4 L26 8" stroke="#C9A84C" stroke-width="1.5" fill="none"/>
+                    <circle cx="24" cy="8" r="1.5" fill="#C9A84C"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">مسجد</span>
+            </div>
+
+            <!-- House -->
+            <div style="background:#f0f4f0;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 24 L24 6 L44 24" fill="#C9A84C"/>
+                    <path d="M4 24 L24 6 L44 24" stroke="#8B6914" stroke-width="1.5" fill="none"/>
+                    <rect x="8" y="22" width="32" height="22" rx="1" fill="#fff" stroke="#ddd"/>
+                    <rect x="14" y="26" width="8" height="8" rx="1" fill="#B3E5FC" stroke="#90CAF9"/>
+                    <rect x="26" y="26" width="8" height="8" rx="1" fill="#B3E5FC" stroke="#90CAF9"/>
+                    <rect x="19" y="32" width="10" height="12" rx="1" fill="#8B6914"/>
+                    <rect x="21" y="36" width="2" height="3" rx="1" fill="#C9A84C"/>
+                    <rect x="6" y="22" width="6" height="8" rx="1" fill="#2d7a4a" opacity=".5"/>
+                    <rect x="36" y="22" width="6" height="8" rx="1" fill="#2d7a4a" opacity=".5"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">رہائشی مکان</span>
+            </div>
+
+            <!-- School -->
+            <div style="background:#e8f5e9;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="18" width="40" height="26" rx="1" fill="#fff" stroke="#ddd"/>
+                    <path d="M4 18 L24 6 L44 18" fill="#1B4D2E"/>
+                    <rect x="10" y="24" width="7" height="7" rx="1" fill="#B3E5FC" stroke="#90CAF9"/>
+                    <rect x="20" y="24" width="7" height="7" rx="1" fill="#B3E5FC" stroke="#90CAF9"/>
+                    <rect x="30" y="24" width="7" height="7" rx="1" fill="#B3E5FC" stroke="#90CAF9"/>
+                    <rect x="18" y="32" width="12" height="12" rx="1" fill="#8B6914"/>
+                    <rect x="22" y="26" width="2" height="4" fill="#C9A84C"/>
+                    <rect x="24" y="14" width="2" height="6" fill="#C9A84C"/>
+                    <circle cx="25" cy="13" r="2" fill="#C9A84C"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">تعلیمی زون</span>
+            </div>
+
+            <!-- Security / CCTV -->
+            <div style="background:#f0f4f0;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 4 L40 10 L40 26 Q40 38 24 44 Q8 38 8 26 L8 10 Z" fill="#1B4D2E" opacity=".15" stroke="#1B4D2E" stroke-width="2"/>
+                    <circle cx="24" cy="24" r="8" fill="#1B4D2E"/>
+                    <circle cx="24" cy="24" r="5" fill="#C9A84C"/>
+                    <circle cx="24" cy="24" r="2" fill="#1B4D2E"/>
+                    <path d="M24 16 Q32 16 32 24" stroke="#1B4D2E" stroke-width="1.5" fill="none" opacity=".4"/>
+                    <path d="M24 16 Q16 16 16 24" stroke="#1B4D2E" stroke-width="1.5" fill="none" opacity=".4"/>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">گیٹڈ سیکیورٹی</span>
+            </div>
+
+            <!-- Plot Marker -->
+            <div style="background:#e8f5e9;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;border:1px solid #c3dfd0;">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4" width="18" height="18" rx="1" fill="#C9A84C" opacity=".3" stroke="#C9A84C" stroke-width="2"/>
+                    <rect x="26" y="4" width="18" height="18" rx="1" fill="#1B4D2E" opacity=".2" stroke="#1B4D2E" stroke-width="2"/>
+                    <rect x="4" y="26" width="18" height="18" rx="1" fill="#1B4D2E" opacity=".2" stroke="#1B4D2E" stroke-width="2"/>
+                    <rect x="26" y="26" width="18" height="18" rx="1" fill="#C9A84C" opacity=".3" stroke="#C9A84C" stroke-width="2"/>
+                    <rect x="21" y="0" width="6" height="48" fill="#fff"/>
+                    <rect x="0" y="21" width="48" height="6" fill="#fff"/>
+                    <text x="9" y="16" font-size="8" fill="#8B6914" font-weight="bold" text-anchor="middle">120</text>
+                    <text x="35" y="16" font-size="8" fill="#1B4D2E" font-weight="bold" text-anchor="middle">200</text>
+                    <text x="9" y="38" font-size="8" fill="#1B4D2E" font-weight="bold" text-anchor="middle">200</text>
+                    <text x="35" y="38" font-size="8" fill="#8B6914" font-weight="bold" text-anchor="middle">400</text>
+                </svg>
+                <span style="font-size:11px;color:#1B4D2E;font-weight:700;">پلاٹ لے آؤٹ</span>
+            </div>
+
+        </div>
+        <p style="font-size:11px;color:#888;text-align:center;margin-top:8px;padding:4px;">
+            اصل تصاویر جلد شامل کی جائیں گی — مزید معلومات کے لیے واٹس ایپ کریں
+        </p>
+    </div>
+</div>
+
+</div><!-- end main-col -->
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+    <!-- APPLY -->
+    <div class="box" id="apply">
+        <div class="box-header"><i class="fas fa-file-alt"></i><h3>Apply for a Plot</h3></div>
+        <div class="box-body">
+            <p style="font-size:.78rem;color:#666;margin-bottom:4px;">Fill form — we'll contact you within 24 hours. <strong>Overseas Pakistanis welcome.</strong></p>
+            <form class="apply-form" onsubmit="submitForm(event)">
+                <label>Full Name *</label>
+                <input type="text" placeholder="Your name" required>
+                <label>WhatsApp *</label>
+                <input type="tel" placeholder="+92 3XX XXXXXXX" required>
+                <label>Plot Size</label>
+                <select>
+                    <option>Select size</option>
+                    <option>120 Sq Yards — From PKR 55 Lakh</option>
+                    <option>200 Sq Yards — From PKR 95 Lakh</option>
+                    <option>400 Sq Yards — From PKR 1.85 Crore</option>
+                    <option>Not decided yet</option>
+                </select>
+                <label>Your Location</label>
+                <select>
+                    <option>Select location</option>
+                    <option>Hyderabad</option>
+                    <option>Karachi</option>
+                    <option>UAE / Gulf</option>
+                    <option>UK / Europe</option>
+                    <option>USA / Canada</option>
+                    <option>Other</option>
+                </select>
+                <label>Message</label>
+                <textarea placeholder="Any specific requirements..."></textarea>
+                <button type="submit" class="apply-submit"><i class="fab fa-whatsapp"></i> Submit via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- NEWS -->
+    <div class="box">
+        <div class="box-header"><i class="fas fa-newspaper"></i><h3>News & Updates</h3></div>
+        <div class="box-body">
+            <div class="news-item"><div class="news-date">May<br>2026</div><p><a href="#">New 400 Sq Yd plots available in Block E — premium locations. Limited availability.</a></p></div>
+            <div class="news-item"><div class="news-date">Apr<br>2026</div><p><a href="#">Mosque construction completed — main masjid now fully operational for residents.</a></p></div>
+            <div class="news-item"><div class="news-date">Mar<br>2026</div><p><a href="#">Underground electricity 100% complete in all blocks. Zero overhead wires.</a></p></div>
+            <div class="news-item"><div class="news-date">Feb<br>2026</div><p><a href="#">60ft main boulevard carpeting completed and operational.</a></p></div>
+            <div class="news-item"><div class="news-date">Jan<br>2026</div><p><a href="#">Special consultation service now available for Overseas Pakistani investors.</a></p></div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="box" id="contact">
+        <div class="box-header"><i class="fas fa-address-card"></i><h3>Contact Us</h3></div>
+        <div class="box-body">
+            <ul class="contact-list">
+                <li><i class="fas fa-map-marker-alt"></i><div><strong>Address</strong>Bypass Road, near Hatri, Hyderabad, Sindh</div></li>
+                <li><i class="fab fa-whatsapp"></i><div><strong>WhatsApp</strong><a href="https://wa.me/923414200004">+92 341 4200004</a></div></li>
+                <li><i class="fas fa-envelope"></i><div><strong>Email</strong><a href="mailto:mr.habib@gulshanesubhan.com">mr.habib@gulshanesubhan.com</a></div></li>
+                <li><i class="fas fa-clock"></i><div><strong>Hours</strong>Mon–Sat: 10AM–8PM | Sun: 11AM–5PM</div></li>
+                <li><i class="fas fa-map"></i><div><strong>Google Maps</strong><a href="https://share.google/eUlEgGbEtAsTdvt4d" target="_blank">View on Maps →</a></div></li>
+            </ul>
+            <a href="https://wa.me/923414200004" class="wa-btn-sm" style="width:100%;justify-content:center;margin-top:10px;padding:11px;font-size:.88rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+    </div>
+
+</div><!-- end sidebar -->
+</div><!-- end main-content -->
+
+<!-- FOOTER -->
 <footer>
-    <div class="footer-grid">
-        <div class="footer-brand">
-            <h3>Gulshan-e-Subhan</h3>
-            <span class="sub">HOUSING SCHEME · HYDERABAD</span>
-            <p>Your Dream Home, Our Commitment to Excellence — a fully developed gated community on Hyderabad Bypass Road with immediate possession available.</p>
-            <div class="social-links">
+    <div class="footer-top">
+        <div class="footer-col">
+            <h4>Gulshan-e-Subhan</h4>
+            <p>Your Dream Home, Our Commitment to Excellence. Fully developed gated community on Hyderabad Bypass Road.</p>
+            <div class="footer-social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/923123456789"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/923414200004"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="footer-col">
-            <h4>Society Features</h4>
-            <p><i class="fas fa-check"></i> Gated Community</p>
-            <p><i class="fas fa-check"></i> Underground Electricity & Gas</p>
-            <p><i class="fas fa-check"></i> Parks & Green Spaces</p>
-            <p><i class="fas fa-check"></i> Mosque & Schools Sector</p>
-            <p><i class="fas fa-check"></i> Wide Carpeted Roads</p>
+            <h4>Quick Links</h4>
+            <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+            <a href="#listings"><i class="fas fa-chevron-right"></i> Available Plots</a>
+            <a href="#amenities"><i class="fas fa-chevron-right"></i> Amenities</a>
+            <a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a>
+            <a href="#apply"><i class="fas fa-chevron-right"></i> Apply Now</a>
         </div>
         <div class="footer-col">
-            <h4>Plot Sizes</h4>
-            <p><i class="fas fa-ruler-combined"></i> 120 Sq Yards</p>
-            <p><i class="fas fa-ruler-combined"></i> 200 Sq Yards</p>
-            <p><i class="fas fa-ruler-combined"></i> 400 Sq Yards</p>
+            <h4>Plot Sizes & Prices</h4>
+            <p><i class="fas fa-ruler-combined"></i> 120 Sq Yd — From PKR 55 Lakh</p>
+            <p><i class="fas fa-ruler-combined"></i> 200 Sq Yd — From PKR 95 Lakh</p>
+            <p><i class="fas fa-ruler-combined"></i> 400 Sq Yd — From PKR 1.85 Crore</p>
             <p><i class="fas fa-key"></i> Immediate Possession</p>
         </div>
         <div class="footer-col">
             <h4>Contact</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Bypass Road, near Hatri, Hyderabad</p>
-            <a href="https://wa.me/923123456789"><i class="fab fa-whatsapp"></i> +92 312 3456789</a>
+            <p><i class="fas fa-map-marker-alt"></i> Bypass Road, Hatri, Hyderabad</p>
+            <a href="https://wa.me/923414200004"><i class="fab fa-whatsapp"></i> +92 341 4200004</a>
+            <a href="mailto:mr.habib@gulshanesubhan.com"><i class="fas fa-envelope"></i> mr.habib@gulshanesubhan.com</a>
             <a href="https://share.google/eUlEgGbEtAsTdvt4d" target="_blank"><i class="fas fa-map"></i> Google Maps</a>
         </div>
     </div>
-    <div class="footer-cta-wrap">
-        <a href="#apply" class="cta-green" style="display:inline-block;"><i class="fas fa-file-alt" style="margin-right:8px;"></i> Apply for a Plot Today</a>
-    </div>
-    <hr class="footer-divider">
     <div class="footer-bottom">
-        <p>&copy; 2026 <span>Gulshan-e-Subhan Housing Scheme</span>. All Rights Reserved. | Hyderabad, Sindh</p>
+        <p>&copy; 2026 <span>Gulshan-e-Subhan Housing Scheme</span>. All Rights Reserved.</p>
         <p>Website by <span>369 AI Ventures</span></p>
     </div>
 </footer>
 
-<a href="https://wa.me/923123456789?text=Assalam%20o%20Alaikum%2C%20I%20am%20interested%20in%20Gulshan-e-Subhan%20Housing%20Scheme." class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/923414200004" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal" id="modal">
+        <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+        <div id="m-header-card" style="text-align:center;padding:22px 18px;">
+            <div id="m-urdu-title" style="font-family:serif;font-size:30px;font-weight:700;line-height:2;direction:rtl;color:#C9A84C;"></div>
+            <div id="m-eng-sub" style="font-size:12px;color:rgba(255,255,255,0.75);margin-top:2px;"></div>
+        </div>
+        <div class="modal-body">
+            <div style="background:#f0f7f3;border:2px solid #1B4D2E;padding:14px 18px;margin-bottom:16px;text-align:center;">
+                <div style="font-family:serif;font-size:26px;font-weight:700;color:#1B4D2E;direction:rtl;line-height:1.8;" id="m-urdu-price"></div>
+                <div style="font-size:13px;color:#666;margin-top:4px;" id="m-price"></div>
+            </div>
+            <div id="m-specs" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;direction:rtl;"></div>
+            <div id="m-desc" style="background:#f9f9f7;border-right:4px solid #C9A84C;padding:12px 14px;margin-bottom:16px;font-family:serif;font-size:15px;direction:rtl;line-height:2.4;color:#333;text-align:right;"></div>
+            <div class="modal-actions">
+                <a class="modal-wa" id="m-wa" href="#" target="_blank"><i class="fab fa-whatsapp"></i> Mr. Habib — واٹس ایپ</a>
+                <a class="modal-call" href="tel:+923414200004"><i class="fas fa-phone"></i> ابھی کال کریں</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
-    gsap.registerPlugin(ScrollTrigger);
-    const lc = document.getElementById('leaves');
-    for(let i=0;i<18;i++){const l=document.createElement('div');l.classList.add('leaf');l.style.left=Math.random()*100+'vw';l.style.animationDuration=(12+Math.random()*15)+'s';l.style.animationDelay=(Math.random()*15)+'s';l.style.width=l.style.height=(4+Math.random()*6)+'px';lc.appendChild(l);}
-    gsap.from(".gsap-hero",{y:60,opacity:0,duration:1.1,stagger:0.2,ease:"power3.out",delay:0.2});
-    gsap.utils.toArray(".gsap-reveal").forEach(el=>{gsap.from(el,{scrollTrigger:{trigger:el,start:"top 87%"},y:50,opacity:0,duration:0.9,ease:"power3.out"});});
-    window.addEventListener('scroll',()=>{const h=document.getElementById('hdr');h.style.padding=window.scrollY>60?'0.8rem 6%':'1.3rem 6%';});
-    function submitForm(e){
-        e.preventDefault();
-        const f=e.target;
-        const n=f.querySelector('input[type="text"]').value;
-        const p=f.querySelector('input[type="tel"]').value;
-        const s=f.querySelectorAll('select')[0].value||'Not specified';
-        const loc=f.querySelectorAll('select')[1].value||'Not specified';
-        const m=f.querySelector('textarea').value||'No message';
-        const t=`Assalam%20o%20Alaikum!%20Plot%20Application%3A%0AName%3A%20${encodeURIComponent(n)}%0APhone%3A%20${encodeURIComponent(p)}%0ASize%3A%20${encodeURIComponent(s)}%0ALocation%3A%20${encodeURIComponent(loc)}%0AMessage%3A%20${encodeURIComponent(m)}`;
-        window.open(`https://wa.me/923123456789?text=${t}`,'_blank');
+const listings = [
+    {
+        urduTitle:"۱۲۰ گز رہائشی پلاٹ",
+        engSub:"120 Sq Yards — Residential Plot | Block A",
+        urduPrice:"قیمت: ۵۵ لاکھ روپے",
+        price:"PKR 55 Lakh",
+        headerBg:"#1B4D2E", headerColor:"#C9A84C",
+        specs:[
+            ["رقبہ","۱۲۰ گز (۱۰۸۰ مربع فٹ)"],
+            ["مقام","بلاک اے، گلشنِ سبحان"],
+            ["سڑک کی چوڑائی","۳۰ فٹ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","مشرق کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی"]
+        ],
+        desc:"بلاک اے میں ۱۲۰ گز کا بہترین رہائشی پلاٹ — گلشنِ سبحان ہاؤسنگ سکیم کے سب سے قابلِ رسائی مقامات میں سے ایک۔ مکمل باؤنڈری وال سوسائٹی، گیٹڈ سیکیورٹی۔ زیرزمین بجلی، سوئی گیس، اور پانی سب منسلک۔ رجسٹری اور انتقال مکمل — فوری ٹرانسفر ممکن۔ سرمایہ کاری یا تعمیر دونوں کے لیے موزوں۔",
+        wa:"120%20Sq%20Yd%20Block%20A%20-%20Mujhe%20dilchaspi%20hai%2C%20details%20share%20karein"
+    },
+    {
+        urduTitle:"۱۲۰ گز کارنر پلاٹ — ڈبل روڈ",
+        engSub:"120 Sq Yards — Corner Plot | Block B",
+        urduPrice:"قیمت: ۶۲ لاکھ روپے",
+        price:"PKR 62 Lakh",
+        headerBg:"#C9A84C", headerColor:"#1B4D2E",
+        specs:[
+            ["رقبہ","۱۲۰ گز (۱۰۸۰ مربع فٹ)"],
+            ["مقام","بلاک بی، کارنر"],
+            ["سڑک کی چوڑائی","۳۰ فٹ + ۳۰ فٹ ڈبل روڈ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","مغرب + جنوب کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی"]
+        ],
+        desc:"بلاک بی میں ۱۲۰ گز کا نادر ڈبل روڈ کارنر پلاٹ۔ دو طرف کھلا — زبردست ہوا اور روشنی۔ کارنر پلاٹس کی قدر عام پلاٹس سے ۱۵ سے ۲۰ فیصد زیادہ ہوتی ہے۔ تمام زیرزمین سہولیات منسلک۔ سرمایہ کاروں کے لیے بہترین انتخاب۔",
+        wa:"120%20Sq%20Yd%20Corner%20Block%20B%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"مسجد کے قریب ۱۲۰ گز پلاٹ",
+        engSub:"120 Sq Yards — Near Mosque Sector",
+        urduPrice:"قیمت: ۵۸ لاکھ روپے",
+        price:"PKR 58 Lakh",
+        headerBg:"#1B4D2E", headerColor:"#C9A84C",
+        specs:[
+            ["رقبہ","۱۲۰ گز (۱۰۸۰ مربع فٹ)"],
+            ["مقام","مسجد سیکٹر کے قریب"],
+            ["سڑک کی چوڑائی","۳۰ فٹ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","شمال کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی"]
+        ],
+        desc:"سوسائٹی کی مرکزی مسجد کے قریب ۱۲۰ گز کا پُرسکون پلاٹ۔ دینی گھرانوں کے لیے مثالی — پیدل فاصلے پر نماز کی سہولت۔ تمام زیرزمین سہولیات مکمل۔ رجسٹری ٹرانسفر ۷ کام کے دنوں میں مکمل۔ کلیئر ٹائٹل، کوئی تنازعہ نہیں۔",
+        wa:"120%20Sq%20Yd%20Mosque%20Sector%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"۲۰۰ گز رہائشی پلاٹ",
+        engSub:"200 Sq Yards — Residential Plot | Block C",
+        urduPrice:"قیمت: ۹۵ لاکھ روپے",
+        price:"PKR 95 Lakh",
+        headerBg:"#1B4D2E", headerColor:"#C9A84C",
+        specs:[
+            ["رقبہ","۲۰۰ گز (۱۸۰۰ مربع فٹ)"],
+            ["مقام","بلاک سی، گلی نمبر ۴"],
+            ["سڑک کی چوڑائی","۳۰ فٹ"],
+            ["حیثیت","برائے فروخت"],
+            ["انتقال","مکمل ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","مشرق کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"بلاک سی میں ۲۰۰ گز کا کشادہ رہائشی پلاٹ — گلشنِ سبحان کے سب سے ترقی یافتہ بلاکس میں سے ایک۔ انتقال مکمل، رجسٹری ٹرانسفر کے لیے تیار۔ جی+۱ یا جی+۲ مکان کے لیے کافی جگہ۔ قیمت قدرے قابلِ مذاکرہ۔",
+        wa:"200%20Sq%20Yd%20Block%20C%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"۲۰۰ گز پارک فیسنگ — گرم سودا",
+        engSub:"200 Sq Yards — Park Facing | Block D | HOT DEAL",
+        urduPrice:"قیمت: ۱.۱۰ کروڑ روپے",
+        price:"PKR 1.10 Crore",
+        headerBg:"#c0392b", headerColor:"#ffffff",
+        specs:[
+            ["رقبہ","۲۰۰ گز (۱۸۰۰ مربع فٹ)"],
+            ["مقام","بلاک ڈی، پارک فیسنگ"],
+            ["سڑک کی چوڑائی","۳۰ فٹ + پارک ویو"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","پارک سامنے — شمال کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"پریمیم ۲۰۰ گز پارک فیسنگ پلاٹ — پوری سوسائٹی کے سب سے مطلوب مقامات میں سے ایک۔ مرکزی پارک کا براہِ راست منظر۔ پارک فیسنگ مکانات کی کرائے اور فروخت دونوں میں ۲۵-۳۰ فیصد زیادہ قدر ہوتی ہے۔ موقع ضائع نہ کریں۔",
+        wa:"200%20Sq%20Yd%20Park%20Facing%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"۲۰۰ گز بلیوارڈ کارنر پلاٹ",
+        engSub:"200 Sq Yards — Boulevard Corner | Main Road",
+        urduPrice:"قیمت: ۱.۲۰ کروڑ روپے",
+        price:"PKR 1.20 Crore",
+        headerBg:"#C9A84C", headerColor:"#1B4D2E",
+        specs:[
+            ["رقبہ","۲۰۰ گز (۱۸۰۰ مربع فٹ)"],
+            ["مقام","مین ۶۰ فٹ بلیوارڈ، کارنر"],
+            ["سڑک کی چوڑائی","۶۰ فٹ + ۳۰ فٹ سائیڈ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","بلیوارڈ + سائیڈ کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"۲۰۰ گز پرشکوہ کارنر پلاٹ — مین ۶۰ فٹ بلیوارڈ پر براہِ راست۔ تین طرف کھلا — زبردست وینٹیلیشن اور روشنی۔ شو ہوم یا گراؤنڈ فلور کمرشل کے لیے مثالی۔ بلیوارڈ پر انتہائی محدود دستیابی۔",
+        wa:"200%20Sq%20Yd%20Boulevard%20Corner%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"اسکول کے قریب ۲۰۰ گز پلاٹ",
+        engSub:"200 Sq Yards — Near School Zone",
+        urduPrice:"قیمت: ۹۸ لاکھ روپے",
+        price:"PKR 98 Lakh",
+        headerBg:"#1B4D2E", headerColor:"#C9A84C",
+        specs:[
+            ["رقبہ","۲۰۰ گز (۱۸۰۰ مربع فٹ)"],
+            ["مقام","تعلیمی زون کے قریب"],
+            ["سڑک کی چوڑائی","۳۰ فٹ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","جنوب کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"۲۰۰ گز فیملی فرینڈلی پلاٹ — سوسائٹی کے تعلیمی سیکٹر سے متصل۔ بچے گیٹڈ کمیونٹی کے اندر پیدل اسکول جا سکتے ہیں۔ مکمل انفراسٹرکچر کے ساتھ خاموش رہائشی گلی۔ اسکول جانے والے بچوں والے خاندانوں کے لیے بہترین۔",
+        wa:"200%20Sq%20Yd%20School%20Sector%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"۴۰۰ گز پریمیم پلاٹ",
+        engSub:"400 Sq Yards — Premium Plot | Block E",
+        urduPrice:"قیمت: ۱.۸۵ کروڑ روپے",
+        price:"PKR 1.85 Crore",
+        headerBg:"#1B4D2E", headerColor:"#C9A84C",
+        specs:[
+            ["رقبہ","۴۰۰ گز (۳۶۰۰ مربع فٹ)"],
+            ["مقام","پریمیم سیکٹر، بلاک ای"],
+            ["سڑک کی چوڑائی","۶۰ فٹ بلیوارڈ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","مشرق کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"بلاک ای میں مین ۶۰ فٹ بلیوارڈ پر ۴۰۰ گز کا وسیع پریمیم پلاٹ — گلشنِ سبحان کا سب سے خصوصی سیکٹر۔ جی+۲ بڑے خاندانی مکان کے لیے کافی جگہ — سامنے لان، گاڑی پارکنگ، ملازم کوارٹر سمیت۔ بیرونِ ملک پاکستانیوں کے لیے مثالی۔",
+        wa:"400%20Sq%20Yd%20Block%20E%20Premium%20-%20Mujhe%20dilchaspi%20hai"
+    },
+    {
+        urduTitle:"۴۰۰ گز کارنر + پارک فیسنگ",
+        engSub:"400 Sq Yards — Corner + Park Facing | Best Value",
+        urduPrice:"قیمت: ۲.۲۰ کروڑ روپے",
+        price:"PKR 2.20 Crore",
+        headerBg:"#C9A84C", headerColor:"#1B4D2E",
+        specs:[
+            ["رقبہ","۴۰۰ گز (۳۶۰۰ مربع فٹ)"],
+            ["مقام","کارنر + پارک فیسنگ زون"],
+            ["سڑک کی چوڑائی","۶۰ فٹ + ۳۰ فٹ + پارک"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","پارک + کارنر — تین طرف کھلا"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"گلشنِ سبحان کا تاج — ۴۰۰ گز کارنر، پارک فیسنگ، اور بلیوارڈ تینوں کا امتزاج۔ یہ زندگی میں ایک بار کا موقع ہے۔ تین طرف کھلا پلاٹ — زیادہ سے زیادہ قدرتی روشنی، پارک کا پینوراما، اور مکمل پرائیویسی۔ پوری سکیم میں صرف ۲ سے ۳ ایسے پلاٹ ہیں۔",
+        wa:"400%20Sq%20Yd%20Corner%20Park%20Facing%20-%20Yeh%20mera%20pehla%20choice%20hai"
+    },
+    {
+        urduTitle:"۴۰۰ گز کارنر — مارکیٹ کے قریب",
+        engSub:"400 Sq Yards — Corner Near Commercial Area",
+        urduPrice:"قیمت: ۲.۰۵ کروڑ روپے",
+        price:"PKR 2.05 Crore",
+        headerBg:"#C9A84C", headerColor:"#1B4D2E",
+        specs:[
+            ["رقبہ","۴۰۰ گز (۳۶۰۰ مربع فٹ)"],
+            ["مقام","مارکیٹ ایریا کے قریب"],
+            ["سڑک کی چوڑائی","۶۰ فٹ + ۳۰ فٹ سائیڈ"],
+            ["حیثیت","برائے فروخت"],
+            ["رجسٹری","تیار ✓"],
+            ["قبضہ","فوری دستیاب ✓"],
+            ["رخ","مغرب + شمال کھلا (کارنر)"],
+            ["سہولیات","زیرزمین بجلی، گیس، پانی، سیوریج"]
+        ],
+        desc:"سوسائٹی کے کمرشل زون کے قریب ۴۰۰ گز کا اسٹریٹجک کارنر پلاٹ۔ دکانیں، فارمیسی، اور مارکیٹ پیدل فاصلے پر۔ جی+۲ شاندار گھر کے لیے بھرپور جگہ۔ کارنر مقام — تین طرف روشنی اور ہوا۔ رہائشی یا ملا جلا استعمال دونوں کے لیے موزوں۔",
+        wa:"400%20Sq%20Yd%20Corner%20Market%20-%20Mujhe%20dilchaspi%20hai"
     }
+];
+
+// HERO SLIDER
+let cur=0;
+const slides=document.querySelectorAll('.hero-slide');
+const dots=document.querySelectorAll('.dot');
+function goSlide(n){slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=n;slides[cur].classList.add('active');dots[cur].classList.add('active');}
+setInterval(()=>goSlide((cur+1)%slides.length),4500);
+
+// FILTER
+function filterTab(btn,cat){
+    document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.lc').forEach(c=>{
+        const cats=c.getAttribute('data-cat')||'';
+        c.style.display=(cat==='all'||cats.includes(cat))?'':'none';
+    });
+}
+
+// MODAL
+function openModal(i){
+    const l=listings[i];
+    const hc=document.getElementById('m-header-card');
+    hc.style.background=l.headerBg;
+    document.getElementById('m-urdu-title').style.color=l.headerColor;
+    document.getElementById('m-urdu-title').textContent=l.urduTitle;
+    document.getElementById('m-eng-sub').textContent=l.engSub;
+    document.getElementById('m-urdu-price').textContent=l.urduPrice;
+    document.getElementById('m-price').textContent=l.price;
+    document.getElementById('m-desc').textContent=l.desc;
+    const specs=document.getElementById('m-specs');
+    specs.innerHTML=l.specs.map(([k,v])=>`
+        <div style="background:#fff;border:1px solid #ddd;padding:10px 12px;border-right:3px solid #1B4D2E;">
+            <div style="font-size:11px;color:#888;font-weight:700;letter-spacing:.5px;margin-bottom:3px;direction:ltr;text-align:right;">${k}</div>
+            <div style="font-family:serif;font-size:16px;color:#1B4D2E;font-weight:700;line-height:1.6;">${v}</div>
+        </div>`).join('');
+    document.getElementById('m-wa').href=`https://wa.me/923414200004?text=Assalam%20o%20Alaikum!%20Gulshan-e-Subhan%20%E2%80%94%20${l.wa}`;
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow='hidden';
+}
+function closeModal(){document.getElementById('modal-overlay').classList.remove('open');document.body.style.overflow='';}
+function closeModalOutside(e){if(e.target===document.getElementById('modal-overlay'))closeModal();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+// FORM
+function submitForm(e){
+    e.preventDefault();
+    const f=e.target;
+    const n=f.querySelector('input[type="text"]').value;
+    const p=f.querySelector('input[type="tel"]').value;
+    const s=f.querySelectorAll('select')[0].value;
+    const l=f.querySelectorAll('select')[1].value;
+    const m=f.querySelector('textarea').value||'No message';
+    const t=`Assalam%20o%20Alaikum!%0APlot%20Application%20%E2%80%94%20Gulshan-e-Subhan%0A%0AName%3A%20${encodeURIComponent(n)}%0APhone%3A%20${encodeURIComponent(p)}%0ASize%3A%20${encodeURIComponent(s)}%0ALocation%3A%20${encodeURIComponent(l)}%0AMessage%3A%20${encodeURIComponent(m)}`;
+    window.open(`https://wa.me/923414200004?text=${t}`,'_blank');
+}
 </script>
 </body>
 </html>
